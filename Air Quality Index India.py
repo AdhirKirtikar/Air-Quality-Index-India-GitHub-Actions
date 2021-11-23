@@ -6,7 +6,7 @@ import google.auth
 
 if (len(sys.argv) == 3):
     print('Number of arguments:', len(sys.argv), 'arguments.')
-    print('One Argument passed. Setting up API Key.')
+    print('Two arguments passed i.e. API Key', len(str(sys.argv[1])), '& Google Credentials', len(str(sys.argv[2])), '. Setting up API Key.')
     apiKey = str(sys.argv[1])
     secret_dict = str(sys.argv[2])
 
@@ -45,5 +45,5 @@ if (len(sys.argv) == 3):
 
 else:
     print('Number of arguments:', len(sys.argv), 'arguments.')
-    print('Only 2 arguments are require i.e. API Key & Google Credentials. Skipping execution.')
+    print('Only 2 arguments are required i.e. API Key & Google Credentials. Skipping execution.')
 
