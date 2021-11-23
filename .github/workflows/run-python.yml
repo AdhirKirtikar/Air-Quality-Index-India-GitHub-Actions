@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-python@v2.3.0
         with:
           python-version: '3.9'
+          cache: 'pip'
       - 
         name: Install dependencies
         run: |
@@ -28,7 +29,7 @@ jobs:
           GOVINAPIKEY: ${{ secrets.DATA_GOV_IN_API_KEY }}
           GDRIVEAPIKEY: ${{ secrets.GDRIVE_API_CREDENTIALS }}
         run: |
-          python my_script.py "$GOVINAPIKEY" "$GDRIVEAPIKEY"
+          python "Air Quality Index India.py" "$GOVINAPIKEY" "$GDRIVEAPIKEY"
 
 
 
