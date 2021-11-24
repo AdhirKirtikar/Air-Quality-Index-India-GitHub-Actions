@@ -5,8 +5,8 @@ name: Run Python
 # Controls when the action will run. 
 on:
   schedule:
-    # run every 5th minute
-    - cron: '*/5 * * * *'
+    # run at 12PM UTC (8PM SGT)
+    - cron: '0 12 * * *'
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
