@@ -7,7 +7,7 @@
 - Python 3.9 is setup using [actions/setup-python@v2.3.0](https://github.com/actions/setup-python) and the pip packages are cached
 - Dependencies are installed (google auth, pygsheets & pandas)
 - The Environment Secrets are exported to environment variables.
-- Finally, the Python script is run with the environment variables passes as parameters.
+- Finally, the Python script is run with the environment variables passed as parameters.
 ### Python script "[Air Quality Index India.py](https://github.com/AdhirKirtikar/Air-Quality-Index-India-GitHub-Actions/blob/master/Air%20Quality%20Index%20India.py)"
 - The script connects to data.gov.in API using API Key passed as a parameter.
 - Then it pulls the latest AQI data for India and stores in pandas dataframe.
