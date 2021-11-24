@@ -4,7 +4,7 @@
 - Google credentials are stored in GitHub Actions Environment Secrets.
 - data.gov.in API Key is also stored in GitHub Actions Environment Secrets.
 - A GitHub Action is created that can run manually or on a schedule [12PM UTC (8PM SGT)]
-- Python 3.9 is setup using actions/setup-python@v2.3.0 and the pip packages are cached
+- Python 3.9 is setup using [actions/setup-python@v2.3.0](https://github.com/actions/setup-python) and the pip packages are cached
 - Dependencies are installed (google auth, pygsheets & pandas)
 - The Environment Secrets are exported to environment variables.
 - Finally, the Python script is run with the environment variables passes as parameters.
