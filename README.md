@@ -5,7 +5,7 @@
 - data.gov.in API Key is also stored in GitHub Actions Environment Secrets.
 - A GitHub Action is created that can run manually or on a schedule [12PM UTC (8PM SGT)]
 - Python 3.9 is setup using [actions/setup-python@v2.3.0](https://github.com/actions/setup-python) and the pip packages are cached
-- Dependencies are installed (google auth, pygsheets & pandas)
+- Dependencies are installed using [py-actions/py-dependency-install@v2](https://github.com/marketplace/actions/python-dependency-installation)  based on requirements.txt (google auth, pygsheets & pandas).
 - The Environment Secrets are exported to environment variables.
 - Finally, the Python script is run with the environment variables passed as parameters.
 ### Python script "[Air Quality Index India.py](https://github.com/AdhirKirtikar/Air-Quality-Index-India-GitHub-Actions/blob/master/Air%20Quality%20Index%20India.py)"
